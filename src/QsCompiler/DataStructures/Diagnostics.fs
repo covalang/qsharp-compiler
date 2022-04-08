@@ -264,7 +264,8 @@ type ErrorCode =
     // TODO: RELEASE 2021-10: Remove PartialApplicationOfTypeParameter.
     | [<Obsolete "This diagnostic is no longer in use.">] PartialApplicationOfTypeParameter = 6223
     | IndirectlyReferencedExpressionType = 6224
-    | TypeMismatchInCopyAndUpdateExpr = 6225
+    // TODO: RELEASE 2022-11: Remove TypeMismatchInCopyAndUpdateExpr.
+    | [<Obsolete "This diagnostic is no longer in use.">] TypeMismatchInCopyAndUpdateExpr = 6225
     | InterpolatedStringInAttribute = 6226
     | ArgumentOfUserDefinedTypeInAttribute = 6227
     | TypeParameterizedArgumentInAttribute = 6228
@@ -294,8 +295,10 @@ type ErrorCode =
     | InvalidCyclicTypeParameterResolution = 6250
     | InvalidCharacterInInterpolatedArgument = 6251
 
-    | TypeMismatchInReturn = 6301
-    | TypeMismatchInValueUpdate = 6302
+    // TODO: RELEASE 2022-06: Remove TypeMismatchInReturn.
+    | [<Obsolete "This diagnostic is no longer in use.">] TypeMismatchInReturn = 6301
+    // TODO: RELEASE 2022-06: Remove TypeMismatchInValueUpdate.
+    | [<Obsolete "This diagnostic is no longer in use.">] TypeMismatchInValueUpdate = 6302
     | UpdateOfImmutableIdentifier = 6303
     | SymbolTupleShapeMismatch = 6305
     | OperationCallOutsideOfOperation = 6306
